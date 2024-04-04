@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #bd5bca; /* Cambié el color de fondo al color celeste */
+}
+
+header {
+    background-color: #fff; /* Cambié el color de fondo del encabezado a blanco */
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    text-align: center; /* Centra el contenido en el main */
+}
+
+main h2 {
+    margin-bottom: 20px; /* Agrega un espacio inferior al título */
+}
+
+main p {
+    margin-bottom: 20px; /* Agrega un espacio inferior a los párrafos */
+}
+
+footer {
+    background-color: #fff; /* Cambié el color de fondo del pie de página a blanco */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Botón */
+#spinButton {
+    background-color: #bd5bca; /* Color celeste */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Agrega un espacio inferior al botón */
+}
+
+#spinButton:hover {
+    background-color: #a040aa; /* Cambié el color del botón al hacer hover */
+}
+
+/* Resultado */
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#chuchuImage {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%; /* Hacer la imagen redonda */
+}
+
+/* Animación */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin-animation {
+    animation: spin 2s linear infinite;
+}
